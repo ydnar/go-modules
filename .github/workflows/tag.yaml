@@ -10,7 +10,6 @@ jobs:
     name: Tag Submodules
     permissions:
       contents: write
-    needs: build
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
