@@ -1,7 +1,5 @@
 package bar
 
-import "go.rr.co/qux"
+import "github.com/tetratelabs/wazero/api"
 
-const Name = "foo"
-
-const Qux = qux.Name
+const ExternTypeFuncName = api.ExternTypeFuncName
