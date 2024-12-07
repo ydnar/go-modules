@@ -1,0 +1,22 @@
+name: Tag
+
+on:
+  push:
+    tags:
+      - '^v[0-9]+.[0-9]+.*'
+
+jobs:
+  tag:
+    name: Tag Submodules
+    permissions:
+      contents: write
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Create submodule tags
+        run: |
+            git tag qux/{{ github.ref_name }} {{ github.ref_name }}
+            git push origin qux/{{ github.ref_name }}
