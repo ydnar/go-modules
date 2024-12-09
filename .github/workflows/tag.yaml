@@ -17,5 +17,5 @@ jobs:
 
       - name: Create submodule tags
         run: |
-            git tag qux/${{ github.ref_name }} ${{ github.ref_name }}
-            git push origin qux/${{ github.ref_name }}
+          find */**/go.mod | xargs dirname | xargs -n1 -I % git tag %/${{ github.ref_name }} ${{ github.ref_name }}
+          find */**/go.mod | xargs dirname | xargs -n1 -I % git push origin %/${{ github.ref_name }}
