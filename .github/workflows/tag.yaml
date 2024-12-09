@@ -15,7 +15,12 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v4
 
-      - name: Create submodule tags
+      - name: Tag module cm
         run: |
-          find */**/go.mod | xargs dirname | xargs -n1 -I % git tag %/${{ github.ref_name }} ${{ github.ref_name }}
-          find */**/go.mod | xargs dirname | xargs -n1 -I % git push origin %/${{ github.ref_name }}
+            git tag cm/${{ github.ref_name }} ${{ github.ref_name }}
+            git push origin cm/${{ github.ref_name }}
+
+      - name: Tag module qux
+        run: |
+            git tag qux/${{ github.ref_name }} ${{ github.ref_name }}
+            git push origin qux/${{ github.ref_name }}
