@@ -4,3 +4,5 @@ go.rr.co/cm v0.0.0-20241209232137-9d226dbea836 h1:ai39SACrtASME8QkqsvSCXNfbD1ktp
 go.rr.co/cm v0.0.0-20241209232137-9d226dbea836/go.mod h1:XvOIApWY1o2XaNKjpiqJqf2GK9xJ3TijTLt0HxSJT/w=
 go.rr.co/cm v0.2.9 h1:6TIg5GAOuKUoElpvR6EZpOxGv83n0CWHBAqZJ/xjNms=
 go.rr.co/cm v0.2.9/go.mod h1:XvOIApWY1o2XaNKjpiqJqf2GK9xJ3TijTLt0HxSJT/w=
+go.rr.co/cm v0.4.0 h1:rlA1niQ1InJZgA5kVDJv6ayzIc3BCLfBS2mI2vbN69M=
+go.rr.co/cm v0.4.0/go.mod h1:XvOIApWY1o2XaNKjpiqJqf2GK9xJ3TijTLt0HxSJT/w=
