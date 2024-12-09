@@ -1,3 +1,6 @@
 package cm
 
-const Name = "cm"
+const (
+	Name        = "cm"
+	Description = "Component Model"
+)
